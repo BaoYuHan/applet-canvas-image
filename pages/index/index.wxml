@@ -6,7 +6,6 @@
     </radio>
   </radio-group>
 
-  <!-- 卡宽度85.6 高度54 宽高比1.585 -->
   <view class="flex-row-center" bindtap="changeCover" bindlongtap="previewImage">
     <image src="/images/h.jpg" wx:if="{{layoutChosen.value==0&&!customizeImage1}}" style="width:{{canvas_width1}}px; height:{{canvas_height1}}px;"></image>
     <canvas style="width:{{canvas_width1}}px; height:{{canvas_height1}}px;" class="{{layoutChosen.value==0&&customizeImage1?'':'hide-canvas'}}" canvas-id="myCanvas1" />
